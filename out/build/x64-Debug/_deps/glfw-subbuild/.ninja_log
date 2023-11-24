@@ -1,0 +1,37 @@
+# ninja log v5
+2	92	7225569517529172	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	49978e8cb20299be
+5	1761	0	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	c3177174bdfe045f
+2156	2274	7225571169372370	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/CMakeFiles/glfw-populate-complete	b3ee9400ddc6d7ca
+1761	1839	7225571164997361	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	111f3e2867341c48
+2	92	7225569517529172	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	49978e8cb20299be
+92	8878	7225569605344707	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	a0a90fb981e09574
+92	8878	7225569605344707	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	a0a90fb981e09574
+5	1761	0	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	c3177174bdfe045f
+1761	1839	7225571164997361	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	111f3e2867341c48
+1839	1917	7225571165778599	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	a85aeb80b4c6efc5
+2156	2274	7225571169372370	CMakeFiles/glfw-populate-complete	b3ee9400ddc6d7ca
+1839	1917	7225571165778599	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	a85aeb80b4c6efc5
+1918	1998	7225571166559538	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	f4e2bc602cd5805f
+1918	1998	7225571166559538	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	f4e2bc602cd5805f
+1998	2077	7225571167497016	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	c99dcd242f0bb18e
+1998	2077	7225571167497016	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	c99dcd242f0bb18e
+2077	2156	7225571168278301	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	bab6d981da36db1c
+2077	2156	7225571168278301	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	bab6d981da36db1c
+2156	2274	7225571169372370	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	b3ee9400ddc6d7ca
+2156	2274	7225571169372370	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	b3ee9400ddc6d7ca
+5	1630	0	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	c3177174bdfe045f
+5	1630	0	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	c3177174bdfe045f
+1630	1710	7225571279610879	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	111f3e2867341c48
+1630	1710	7225571279610879	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	111f3e2867341c48
+1710	1788	7225571280392130	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	a85aeb80b4c6efc5
+1710	1788	7225571280392130	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	a85aeb80b4c6efc5
+1788	1868	7225571281173379	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	f4e2bc602cd5805f
+1788	1868	7225571281173379	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	f4e2bc602cd5805f
+1868	1947	7225571281954969	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	c99dcd242f0bb18e
+1868	1947	7225571281954969	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	c99dcd242f0bb18e
+1947	2026	7225571282735932	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	bab6d981da36db1c
+1947	2026	7225571282735932	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	bab6d981da36db1c
+2026	2134	7225571283829619	CMakeFiles/glfw-populate-complete	b3ee9400ddc6d7ca
+2026	2134	7225571283829619	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	b3ee9400ddc6d7ca
+2026	2134	7225571283829619	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/CMakeFiles/glfw-populate-complete	b3ee9400ddc6d7ca
+2026	2134	7225571283829619	C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	b3ee9400ddc6d7ca

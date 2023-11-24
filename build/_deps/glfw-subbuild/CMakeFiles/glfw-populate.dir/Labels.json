@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiello\u0144ski/3d23-main/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiello\u0144ski/3d23-main/build/_deps/glfw-subbuild/CMakeFiles/0167f930af2a355da0748d1cc4c7bbd1/glfw-populate.rule"
+		},
+		{
+			"file" : "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiello\u0144ski/3d23-main/build/_deps/glfw-subbuild/CMakeFiles/3b4f4437d542f87fc31fbdb42b338b14/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiello\u0144ski/3d23-main/build/_deps/glfw-subbuild/CMakeFiles/f2b30939c086cafdfd493a9ebae4b4c7/glfw-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiello\u0144ski/3d23-main/build/_deps/glfw-subbuild/CMakeFiles/f2b30939c086cafdfd493a9ebae4b4c7/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiello\u0144ski/3d23-main/build/_deps/glfw-subbuild/CMakeFiles/f2b30939c086cafdfd493a9ebae4b4c7/glfw-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiello\u0144ski/3d23-main/build/_deps/glfw-subbuild/CMakeFiles/f2b30939c086cafdfd493a9ebae4b4c7/glfw-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiello\u0144ski/3d23-main/build/_deps/glfw-subbuild/CMakeFiles/f2b30939c086cafdfd493a9ebae4b4c7/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiello\u0144ski/3d23-main/build/_deps/glfw-subbuild/CMakeFiles/f2b30939c086cafdfd493a9ebae4b4c7/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiello\u0144ski/3d23-main/build/_deps/glfw-subbuild/CMakeFiles/f2b30939c086cafdfd493a9ebae4b4c7/glfw-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiello\u0144ski/3d23-main/build/_deps/glfw-subbuild/CMakeFiles/f2b30939c086cafdfd493a9ebae4b4c7/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}

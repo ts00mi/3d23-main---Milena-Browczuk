@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty\glad\glad_4_6\glad\src\gl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty\stb\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{723101B1-8D99-3474-8C76-9CA87A61A882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7B3D2BAB-2473-3392-968A-EBEE14EE1AFB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,150 @@
+^C:\USERS\MIMIL\DESKTOP\PG3D - UNIWERSYTET JAGIELLOŃSKI\3D23-MAIN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\DEEE9C5A1EF285B259A0DCE9BBA06204\SPDLOG-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/spdlog-populate-prefix/tmp/spdlog-populate-mkdirs.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MIMIL\DESKTOP\PG3D - UNIWERSYTET JAGIELLOŃSKI\3D23-MAIN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\DEEE9C5A1EF285B259A0DCE9BBA06204\SPDLOG-POPULATE-DOWNLOAD.RULE
+setlocal
+cd "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/spdlog-populate-prefix/tmp/spdlog-populate-gitclone.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MIMIL\DESKTOP\PG3D - UNIWERSYTET JAGIELLOŃSKI\3D23-MAIN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\DEEE9C5A1EF285B259A0DCE9BBA06204\SPDLOG-POPULATE-UPDATE.RULE
+setlocal
+cd "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-src"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcan_fetch=YES -P "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/spdlog-populate-prefix/tmp/spdlog-populate-gitupdate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MIMIL\DESKTOP\PG3D - UNIWERSYTET JAGIELLOŃSKI\3D23-MAIN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\DEEE9C5A1EF285B259A0DCE9BBA06204\SPDLOG-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MIMIL\DESKTOP\PG3D - UNIWERSYTET JAGIELLOŃSKI\3D23-MAIN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\DEEE9C5A1EF285B259A0DCE9BBA06204\SPDLOG-POPULATE-CONFIGURE.RULE
+setlocal
+cd "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MIMIL\DESKTOP\PG3D - UNIWERSYTET JAGIELLOŃSKI\3D23-MAIN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\DEEE9C5A1EF285B259A0DCE9BBA06204\SPDLOG-POPULATE-BUILD.RULE
+setlocal
+cd "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MIMIL\DESKTOP\PG3D - UNIWERSYTET JAGIELLOŃSKI\3D23-MAIN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\DEEE9C5A1EF285B259A0DCE9BBA06204\SPDLOG-POPULATE-INSTALL.RULE
+setlocal
+cd "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MIMIL\DESKTOP\PG3D - UNIWERSYTET JAGIELLOŃSKI\3D23-MAIN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\DEEE9C5A1EF285B259A0DCE9BBA06204\SPDLOG-POPULATE-TEST.RULE
+setlocal
+cd "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MIMIL\DESKTOP\PG3D - UNIWERSYTET JAGIELLOŃSKI\3D23-MAIN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\65F2A27BCFB8DA1F43135EF3AC53BD53\SPDLOG-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/CMakeFiles/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/CMakeFiles/Debug/spdlog-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/Debug/spdlog-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MIMIL\DESKTOP\PG3D - UNIWERSYTET JAGIELLOŃSKI\3D23-MAIN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKEFILES\0DEAD54408FF7E6ABBE4D2447A99813E\SPDLOG-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MIMIL\DESKTOP\PG3D - UNIWERSYTET JAGIELLOŃSKI\3D23-MAIN\BUILD\_DEPS\SPDLOG-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild" "-BC:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild" --check-stamp-file "C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/build/_deps/spdlog-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

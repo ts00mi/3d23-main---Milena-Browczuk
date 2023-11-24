@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\Application\application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\Application\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\Application\shader_source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\Application\application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\Application\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\Application\shader_source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\Application\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\glad.dir\$(Configuration)\gl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{723101B1-8D99-3474-8C76-9CA87A61A882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{AC12105B-2EDB-3CA2-B595-74751F5DEB1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7B3D2BAB-2473-3392-968A-EBEE14EE1AFB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

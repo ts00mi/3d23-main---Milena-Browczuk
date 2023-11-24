@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeFiles\deee9c5a1ef285b259a0dce9bba06204\spdlog-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeFiles\deee9c5a1ef285b259a0dce9bba06204\spdlog-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeFiles\deee9c5a1ef285b259a0dce9bba06204\spdlog-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeFiles\deee9c5a1ef285b259a0dce9bba06204\spdlog-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeFiles\deee9c5a1ef285b259a0dce9bba06204\spdlog-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeFiles\deee9c5a1ef285b259a0dce9bba06204\spdlog-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeFiles\deee9c5a1ef285b259a0dce9bba06204\spdlog-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeFiles\deee9c5a1ef285b259a0dce9bba06204\spdlog-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeFiles\65f2a27bcfb8da1f43135ef3ac53bd53\spdlog-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeFiles\0dead54408ff7e6abbe4d2447a99813e\spdlog-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\build\_deps\spdlog-subbuild\CMakeFiles\spdlog-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8C5BEE13-8C52-3131-86B9-C66E4265864F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
