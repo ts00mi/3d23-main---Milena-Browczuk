@@ -13,13 +13,15 @@
   },
   "ExpandedNodes": [
     "",
+    "\\Assignments",
     "\\src",
     "\\src\\Assignments",
+    "\\src\\Assignments\\Colors",
+    "\\src\\Assignments\\Colors\\shaders",
     "\\src\\Assignments\\House",
-    "\\src\\Assignments\\House\\shaders",
     "\\src\\Assignments\\Triangle",
     "\\src\\Assignments\\Triangle\\shaders"
   ],
-  "SelectedNode": "\\src\\Assignments\\House\\app.cpp",
+  "SelectedNode": "\\src\\Assignments\\Colors\\app.cpp",
   "PreviewInSolutionExplorer": false
 }

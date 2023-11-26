@@ -262,6 +262,15 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+Colors_BINARY_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/Assignments/Colors
+
+//Value Computed by CMake
+Colors_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Colors_SOURCE_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/Colors
+
+//Value Computed by CMake
 Engine_BINARY_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/Engine
 
 //Value Computed by CMake
@@ -623,7 +632,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

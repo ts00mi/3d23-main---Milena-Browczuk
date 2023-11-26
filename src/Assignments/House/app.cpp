@@ -22,7 +22,7 @@ void SimpleShapeApplication::init() {
         exit(-1);
     }
 
-    // A vector containing the x,y,z vertex coordinates for the triangle.
+    // A vector containing the x,y,z vertex coordinates for the (triangle) -> 3x for house
     std::vector<GLfloat> vertices = 
     {
             -0.5f, 0.0f, 0.0f,
