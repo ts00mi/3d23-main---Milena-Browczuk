@@ -1429,6 +1429,426 @@ build src\Assignments\Colors\CMakeFiles\install\local.util: CUSTOM_COMMAND src\A
 build src\Assignments\Colors\install\local: phony src\Assignments\Colors\CMakeFiles\install\local.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Indices
+
+
+#############################################
+# Order-only phony target for Indices
+
+build cmake_object_order_depends_target_Indices: phony || cmake_object_order_depends_target_application cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
+
+build src\Assignments\Indices\CMakeFiles\Indices.dir\main.cpp.obj: CXX_COMPILER__Indices_unscanned_Debug C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Indices\main.cpp || cmake_object_order_depends_target_Indices
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/Indices\"" -DPROJECT_NAME=\"Indices\" -DROOT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main\"" -DXE_DEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
+  INCLUDES = -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty\glad\glad_4_6\glad\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glfw-src\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glm-src"
+  OBJECT_DIR = src\Assignments\Indices\CMakeFiles\Indices.dir
+  OBJECT_FILE_DIR = src\Assignments\Indices\CMakeFiles\Indices.dir
+  TARGET_COMPILE_PDB = src\Assignments\Indices\CMakeFiles\Indices.dir\
+  TARGET_PDB = src\Assignments\Indices\Indices.pdb
+
+build src\Assignments\Indices\CMakeFiles\Indices.dir\app.cpp.obj: CXX_COMPILER__Indices_unscanned_Debug C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Indices\app.cpp || cmake_object_order_depends_target_Indices
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/Indices\"" -DPROJECT_NAME=\"Indices\" -DROOT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main\"" -DXE_DEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
+  INCLUDES = -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty\glad\glad_4_6\glad\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glfw-src\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glm-src"
+  OBJECT_DIR = src\Assignments\Indices\CMakeFiles\Indices.dir
+  OBJECT_FILE_DIR = src\Assignments\Indices\CMakeFiles\Indices.dir
+  TARGET_COMPILE_PDB = src\Assignments\Indices\CMakeFiles\Indices.dir\
+  TARGET_PDB = src\Assignments\Indices\Indices.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Indices
+
+
+#############################################
+# Link the executable src\Assignments\Indices\Indices.exe
+
+build src\Assignments\Indices\Indices.exe: CXX_EXECUTABLE_LINKER__Indices_Debug CMakeFiles\glad.dir\src\3rdParty\glad\glad_4_6\glad\src\gl.c.obj src\Assignments\Indices\CMakeFiles\Indices.dir\main.cpp.obj src\Assignments\Indices\CMakeFiles\Indices.dir\app.cpp.obj | _deps\glfw-build\src\glfw3.lib src\Application\application.lib _deps\glfw-build\src\glfw3.lib || _deps\glfw-build\src\glfw3.lib glad src\Application\application.lib
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = opengl32.lib  _deps\glfw-build\src\glfw3.lib  src\Application\application.lib  opengl32.lib  _deps\glfw-build\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = src\Assignments\Indices\CMakeFiles\Indices.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\Assignments\Indices\CMakeFiles\Indices.dir\
+  TARGET_FILE = src\Assignments\Indices\Indices.exe
+  TARGET_IMPLIB = src\Assignments\Indices\Indices.lib
+  TARGET_PDB = src\Assignments\Indices\Indices.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build src\Assignments\Indices\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Indices" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src\Assignments\Indices\edit_cache: phony src\Assignments\Indices\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src\Assignments\Indices\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Indices" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main" -B"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src\Assignments\Indices\rebuild_cache: phony src\Assignments\Indices\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build src\Assignments\Indices\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build src\Assignments\Indices\CMakeFiles\install.util: CUSTOM_COMMAND src\Assignments\Indices\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Indices" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src\Assignments\Indices\install: phony src\Assignments\Indices\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build src\Assignments\Indices\CMakeFiles\install\local.util: CUSTOM_COMMAND src\Assignments\Indices\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Indices" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src\Assignments\Indices\install\local: phony src\Assignments\Indices\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Uniforms
+
+
+#############################################
+# Order-only phony target for Uniforms
+
+build cmake_object_order_depends_target_Uniforms: phony || cmake_object_order_depends_target_application cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
+
+build src\Assignments\Uniforms\CMakeFiles\Uniforms.dir\main.cpp.obj: CXX_COMPILER__Uniforms_unscanned_Debug C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Uniforms\main.cpp || cmake_object_order_depends_target_Uniforms
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/Uniforms\"" -DPROJECT_NAME=\"Uniforms\" -DROOT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main\"" -DXE_DEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
+  INCLUDES = -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty\glad\glad_4_6\glad\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glfw-src\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glm-src"
+  OBJECT_DIR = src\Assignments\Uniforms\CMakeFiles\Uniforms.dir
+  OBJECT_FILE_DIR = src\Assignments\Uniforms\CMakeFiles\Uniforms.dir
+  TARGET_COMPILE_PDB = src\Assignments\Uniforms\CMakeFiles\Uniforms.dir\
+  TARGET_PDB = src\Assignments\Uniforms\Uniforms.pdb
+
+build src\Assignments\Uniforms\CMakeFiles\Uniforms.dir\app.cpp.obj: CXX_COMPILER__Uniforms_unscanned_Debug C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Uniforms\app.cpp || cmake_object_order_depends_target_Uniforms
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/Uniforms\"" -DPROJECT_NAME=\"Uniforms\" -DROOT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main\"" -DXE_DEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
+  INCLUDES = -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty\glad\glad_4_6\glad\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glfw-src\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glm-src"
+  OBJECT_DIR = src\Assignments\Uniforms\CMakeFiles\Uniforms.dir
+  OBJECT_FILE_DIR = src\Assignments\Uniforms\CMakeFiles\Uniforms.dir
+  TARGET_COMPILE_PDB = src\Assignments\Uniforms\CMakeFiles\Uniforms.dir\
+  TARGET_PDB = src\Assignments\Uniforms\Uniforms.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Uniforms
+
+
+#############################################
+# Link the executable src\Assignments\Uniforms\Uniforms.exe
+
+build src\Assignments\Uniforms\Uniforms.exe: CXX_EXECUTABLE_LINKER__Uniforms_Debug CMakeFiles\glad.dir\src\3rdParty\glad\glad_4_6\glad\src\gl.c.obj src\Assignments\Uniforms\CMakeFiles\Uniforms.dir\main.cpp.obj src\Assignments\Uniforms\CMakeFiles\Uniforms.dir\app.cpp.obj | _deps\glfw-build\src\glfw3.lib src\Application\application.lib _deps\glfw-build\src\glfw3.lib || _deps\glfw-build\src\glfw3.lib glad src\Application\application.lib
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = opengl32.lib  _deps\glfw-build\src\glfw3.lib  src\Application\application.lib  opengl32.lib  _deps\glfw-build\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = src\Assignments\Uniforms\CMakeFiles\Uniforms.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\Assignments\Uniforms\CMakeFiles\Uniforms.dir\
+  TARGET_FILE = src\Assignments\Uniforms\Uniforms.exe
+  TARGET_IMPLIB = src\Assignments\Uniforms\Uniforms.lib
+  TARGET_PDB = src\Assignments\Uniforms\Uniforms.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build src\Assignments\Uniforms\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Uniforms" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src\Assignments\Uniforms\edit_cache: phony src\Assignments\Uniforms\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src\Assignments\Uniforms\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Uniforms" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main" -B"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src\Assignments\Uniforms\rebuild_cache: phony src\Assignments\Uniforms\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build src\Assignments\Uniforms\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build src\Assignments\Uniforms\CMakeFiles\install.util: CUSTOM_COMMAND src\Assignments\Uniforms\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Uniforms" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src\Assignments\Uniforms\install: phony src\Assignments\Uniforms\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build src\Assignments\Uniforms\CMakeFiles\install\local.util: CUSTOM_COMMAND src\Assignments\Uniforms\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Uniforms" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src\Assignments\Uniforms\install\local: phony src\Assignments\Uniforms\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target PVM
+
+
+#############################################
+# Order-only phony target for PVM
+
+build cmake_object_order_depends_target_PVM: phony || cmake_object_order_depends_target_application cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
+
+build src\Assignments\PVM\CMakeFiles\PVM.dir\main.cpp.obj: CXX_COMPILER__PVM_unscanned_Debug C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\PVM\main.cpp || cmake_object_order_depends_target_PVM
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/PVM\"" -DPROJECT_NAME=\"PVM\" -DROOT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main\"" -DXE_DEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
+  INCLUDES = -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty\glad\glad_4_6\glad\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glfw-src\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glm-src"
+  OBJECT_DIR = src\Assignments\PVM\CMakeFiles\PVM.dir
+  OBJECT_FILE_DIR = src\Assignments\PVM\CMakeFiles\PVM.dir
+  TARGET_COMPILE_PDB = src\Assignments\PVM\CMakeFiles\PVM.dir\
+  TARGET_PDB = src\Assignments\PVM\PVM.pdb
+
+build src\Assignments\PVM\CMakeFiles\PVM.dir\app.cpp.obj: CXX_COMPILER__PVM_unscanned_Debug C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\PVM\app.cpp || cmake_object_order_depends_target_PVM
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/PVM\"" -DPROJECT_NAME=\"PVM\" -DROOT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main\"" -DXE_DEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
+  INCLUDES = -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty\glad\glad_4_6\glad\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glfw-src\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glm-src"
+  OBJECT_DIR = src\Assignments\PVM\CMakeFiles\PVM.dir
+  OBJECT_FILE_DIR = src\Assignments\PVM\CMakeFiles\PVM.dir
+  TARGET_COMPILE_PDB = src\Assignments\PVM\CMakeFiles\PVM.dir\
+  TARGET_PDB = src\Assignments\PVM\PVM.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target PVM
+
+
+#############################################
+# Link the executable src\Assignments\PVM\PVM.exe
+
+build src\Assignments\PVM\PVM.exe: CXX_EXECUTABLE_LINKER__PVM_Debug CMakeFiles\glad.dir\src\3rdParty\glad\glad_4_6\glad\src\gl.c.obj src\Assignments\PVM\CMakeFiles\PVM.dir\main.cpp.obj src\Assignments\PVM\CMakeFiles\PVM.dir\app.cpp.obj | _deps\glfw-build\src\glfw3.lib src\Application\application.lib _deps\glfw-build\src\glfw3.lib || _deps\glfw-build\src\glfw3.lib glad src\Application\application.lib
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = opengl32.lib  _deps\glfw-build\src\glfw3.lib  src\Application\application.lib  opengl32.lib  _deps\glfw-build\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = src\Assignments\PVM\CMakeFiles\PVM.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\Assignments\PVM\CMakeFiles\PVM.dir\
+  TARGET_FILE = src\Assignments\PVM\PVM.exe
+  TARGET_IMPLIB = src\Assignments\PVM\PVM.lib
+  TARGET_PDB = src\Assignments\PVM\PVM.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build src\Assignments\PVM\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\PVM" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src\Assignments\PVM\edit_cache: phony src\Assignments\PVM\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src\Assignments\PVM\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\PVM" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main" -B"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src\Assignments\PVM\rebuild_cache: phony src\Assignments\PVM\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build src\Assignments\PVM\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build src\Assignments\PVM\CMakeFiles\install.util: CUSTOM_COMMAND src\Assignments\PVM\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\PVM" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src\Assignments\PVM\install: phony src\Assignments\PVM\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build src\Assignments\PVM\CMakeFiles\install\local.util: CUSTOM_COMMAND src\Assignments\PVM\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\PVM" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src\Assignments\PVM\install\local: phony src\Assignments\PVM\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Pyramid
+
+
+#############################################
+# Order-only phony target for Pyramid
+
+build cmake_object_order_depends_target_Pyramid: phony || cmake_object_order_depends_target_application cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
+
+build src\Assignments\Pyramid\CMakeFiles\Pyramid.dir\main.cpp.obj: CXX_COMPILER__Pyramid_unscanned_Debug C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Pyramid\main.cpp || cmake_object_order_depends_target_Pyramid
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/Pyramid\"" -DPROJECT_NAME=\"Pyramid\" -DROOT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main\"" -DXE_DEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
+  INCLUDES = -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty\glad\glad_4_6\glad\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glfw-src\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glm-src"
+  OBJECT_DIR = src\Assignments\Pyramid\CMakeFiles\Pyramid.dir
+  OBJECT_FILE_DIR = src\Assignments\Pyramid\CMakeFiles\Pyramid.dir
+  TARGET_COMPILE_PDB = src\Assignments\Pyramid\CMakeFiles\Pyramid.dir\
+  TARGET_PDB = src\Assignments\Pyramid\Pyramid.pdb
+
+build src\Assignments\Pyramid\CMakeFiles\Pyramid.dir\app.cpp.obj: CXX_COMPILER__Pyramid_unscanned_Debug C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Pyramid\app.cpp || cmake_object_order_depends_target_Pyramid
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/Pyramid\"" -DPROJECT_NAME=\"Pyramid\" -DROOT_DIR="\"C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main\"" -DXE_DEBUG
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
+  INCLUDES = -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\src\3rdParty\glad\glad_4_6\glad\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glfw-src\include" -I"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\_deps\glm-src"
+  OBJECT_DIR = src\Assignments\Pyramid\CMakeFiles\Pyramid.dir
+  OBJECT_FILE_DIR = src\Assignments\Pyramid\CMakeFiles\Pyramid.dir
+  TARGET_COMPILE_PDB = src\Assignments\Pyramid\CMakeFiles\Pyramid.dir\
+  TARGET_PDB = src\Assignments\Pyramid\Pyramid.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Pyramid
+
+
+#############################################
+# Link the executable src\Assignments\Pyramid\Pyramid.exe
+
+build src\Assignments\Pyramid\Pyramid.exe: CXX_EXECUTABLE_LINKER__Pyramid_Debug CMakeFiles\glad.dir\src\3rdParty\glad\glad_4_6\glad\src\gl.c.obj src\Assignments\Pyramid\CMakeFiles\Pyramid.dir\main.cpp.obj src\Assignments\Pyramid\CMakeFiles\Pyramid.dir\app.cpp.obj | _deps\glfw-build\src\glfw3.lib src\Application\application.lib _deps\glfw-build\src\glfw3.lib || _deps\glfw-build\src\glfw3.lib glad src\Application\application.lib
+  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = opengl32.lib  _deps\glfw-build\src\glfw3.lib  src\Application\application.lib  opengl32.lib  _deps\glfw-build\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = src\Assignments\Pyramid\CMakeFiles\Pyramid.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\Assignments\Pyramid\CMakeFiles\Pyramid.dir\
+  TARGET_FILE = src\Assignments\Pyramid\Pyramid.exe
+  TARGET_IMPLIB = src\Assignments\Pyramid\Pyramid.lib
+  TARGET_PDB = src\Assignments\Pyramid\Pyramid.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build src\Assignments\Pyramid\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Pyramid" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src\Assignments\Pyramid\edit_cache: phony src\Assignments\Pyramid\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src\Assignments\Pyramid\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Pyramid" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main" -B"C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src\Assignments\Pyramid\rebuild_cache: phony src\Assignments\Pyramid\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build src\Assignments\Pyramid\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build src\Assignments\Pyramid\CMakeFiles\install.util: CUSTOM_COMMAND src\Assignments\Pyramid\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Pyramid" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src\Assignments\Pyramid\install: phony src\Assignments\Pyramid\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build src\Assignments\Pyramid\CMakeFiles\install\local.util: CUSTOM_COMMAND src\Assignments\Pyramid\all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\mimil\Desktop\PG3D - Uniwersytet Jagielloński\3d23-main\out\build\x64-Debug\src\Assignments\Pyramid" && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src\Assignments\Pyramid\install\local: phony src\Assignments\Pyramid\CMakeFiles\install\local.util
+
+# =============================================================================
 # Target aliases.
 
 build Colors: phony src\Assignments\Colors\Colors.exe
@@ -1439,9 +1859,25 @@ build House: phony src\Assignments\House\House.exe
 
 build House.exe: phony src\Assignments\House\House.exe
 
+build Indices: phony src\Assignments\Indices\Indices.exe
+
+build Indices.exe: phony src\Assignments\Indices\Indices.exe
+
+build PVM: phony src\Assignments\PVM\PVM.exe
+
+build PVM.exe: phony src\Assignments\PVM\PVM.exe
+
+build Pyramid: phony src\Assignments\Pyramid\Pyramid.exe
+
+build Pyramid.exe: phony src\Assignments\Pyramid\Pyramid.exe
+
 build Triangle: phony src\Assignments\Triangle\Triangle.exe
 
 build Triangle.exe: phony src\Assignments\Triangle\Triangle.exe
+
+build Uniforms: phony src\Assignments\Uniforms\Uniforms.exe
+
+build Uniforms.exe: phony src\Assignments\Uniforms\Uniforms.exe
 
 build application: phony src\Application\application.lib
 
@@ -1475,7 +1911,7 @@ build xe-engine.lib: phony src\XeEngine\xe-engine.lib
 #############################################
 # Folder: C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug
 
-build all: phony glad _deps\glfw-build\all _deps\glm-build\all _deps\spdlog-build\all src\Application\all src\XeEngine\all src\Engine\all src\Assignments\Triangle\all src\Assignments\House\all src\Assignments\Colors\all
+build all: phony glad _deps\glfw-build\all _deps\glm-build\all _deps\spdlog-build\all src\Application\all src\XeEngine\all src\Engine\all src\Assignments\Triangle\all src\Assignments\House\all src\Assignments\Colors\all src\Assignments\Indices\all src\Assignments\Uniforms\all src\Assignments\PVM\all src\Assignments\Pyramid\all
 
 # =============================================================================
 
@@ -1536,9 +1972,37 @@ build src\Assignments\House\all: phony src\Assignments\House\House.exe
 # =============================================================================
 
 #############################################
+# Folder: C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/Assignments/Indices
+
+build src\Assignments\Indices\all: phony src\Assignments\Indices\Indices.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/Assignments/PVM
+
+build src\Assignments\PVM\all: phony src\Assignments\PVM\PVM.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/Assignments/Pyramid
+
+build src\Assignments\Pyramid\all: phony src\Assignments\Pyramid\Pyramid.exe
+
+# =============================================================================
+
+#############################################
 # Folder: C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/Assignments/Triangle
 
 build src\Assignments\Triangle\all: phony src\Assignments\Triangle\Triangle.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/Assignments/Uniforms
+
+build src\Assignments\Uniforms\all: phony src\Assignments\Uniforms\Uniforms.exe
 
 # =============================================================================
 
@@ -1561,14 +2025,14 @@ build src\XeEngine\all: phony src\XeEngine\xe-engine.lib
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\ExternalProject.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindGit.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Application\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Colors\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\House\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Triangle\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Engine\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\XeEngine\CMakeLists.txt CMakeCache.txt CMakeFiles\3.27.2-msvc1\CMakeCCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeSystem.cmake _deps\glfw-src\CMakeLists.txt _deps\glfw-src\CMake\cmake_uninstall.cmake.in _deps\glfw-src\CMake\glfw3.pc.in _deps\glfw-src\CMake\glfw3Config.cmake.in _deps\glfw-src\src\CMakeLists.txt _deps\glm-src\CMakeLists.txt _deps\glm-src\glm\CMakeLists.txt _deps\spdlog-src\CMakeLists.txt _deps\spdlog-src\cmake\ide.cmake _deps\spdlog-src\cmake\utils.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\ExternalProject.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindGit.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Application\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Colors\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\House\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Indices\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\PVM\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Pyramid\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Triangle\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Uniforms\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Engine\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\XeEngine\CMakeLists.txt CMakeCache.txt CMakeFiles\3.27.2-msvc1\CMakeCCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeSystem.cmake _deps\glfw-src\CMakeLists.txt _deps\glfw-src\CMake\cmake_uninstall.cmake.in _deps\glfw-src\CMake\glfw3.pc.in _deps\glfw-src\CMake\glfw3Config.cmake.in _deps\glfw-src\src\CMakeLists.txt _deps\glm-src\CMakeLists.txt _deps\glm-src\glm\CMakeLists.txt _deps\spdlog-src\CMakeLists.txt _deps\spdlog-src\cmake\ide.cmake _deps\spdlog-src\cmake\utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\ExternalProject.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindGit.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Application\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Colors\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\House\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Triangle\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Engine\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\XeEngine\CMakeLists.txt CMakeCache.txt CMakeFiles\3.27.2-msvc1\CMakeCCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeSystem.cmake _deps\glfw-src\CMakeLists.txt _deps\glfw-src\CMake\cmake_uninstall.cmake.in _deps\glfw-src\CMake\glfw3.pc.in _deps\glfw-src\CMake\glfw3Config.cmake.in _deps\glfw-src\src\CMakeLists.txt _deps\glm-src\CMakeLists.txt _deps\glm-src\glm\CMakeLists.txt _deps\spdlog-src\CMakeLists.txt _deps\spdlog-src\cmake\ide.cmake _deps\spdlog-src\cmake\utils.cmake: phony
+build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\ExternalProject.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\ExternalProject\shared_internal_commands.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FetchContent.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FetchContent\CMakeLists.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindGit.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Application\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Colors\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\House\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Indices\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\PVM\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Pyramid\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Triangle\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Assignments\Uniforms\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\Engine\CMakeLists.txt C$:\Users\mimil\Desktop\PG3D$ -$ Uniwersytet$ Jagielloński\3d23-main\src\XeEngine\CMakeLists.txt CMakeCache.txt CMakeFiles\3.27.2-msvc1\CMakeCCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeCXXCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeRCCompiler.cmake CMakeFiles\3.27.2-msvc1\CMakeSystem.cmake _deps\glfw-src\CMakeLists.txt _deps\glfw-src\CMake\cmake_uninstall.cmake.in _deps\glfw-src\CMake\glfw3.pc.in _deps\glfw-src\CMake\glfw3Config.cmake.in _deps\glfw-src\src\CMakeLists.txt _deps\glm-src\CMakeLists.txt _deps\glm-src\glm\CMakeLists.txt _deps\spdlog-src\CMakeLists.txt _deps\spdlog-src\cmake\ide.cmake _deps\spdlog-src\cmake\utils.cmake: phony
 
 
 #############################################

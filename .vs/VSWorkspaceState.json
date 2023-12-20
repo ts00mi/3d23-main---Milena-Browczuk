@@ -13,15 +13,16 @@
   },
   "ExpandedNodes": [
     "",
-    "\\Assignments",
     "\\src",
     "\\src\\Assignments",
-    "\\src\\Assignments\\Colors",
-    "\\src\\Assignments\\Colors\\shaders",
     "\\src\\Assignments\\House",
+    "\\src\\Assignments\\PVM",
+    "\\src\\Assignments\\Pyramid",
+    "\\src\\Assignments\\Pyramid\\shaders",
     "\\src\\Assignments\\Triangle",
-    "\\src\\Assignments\\Triangle\\shaders"
+    "\\src\\Assignments\\Uniforms",
+    "\\src\\Assignments\\Uniforms\\shaders"
   ],
-  "SelectedNode": "\\src\\Assignments\\Colors\\app.cpp",
+  "SelectedNode": "\\src\\Assignments\\Pyramid\\app.cpp",
   "PreviewInSolutionExplorer": false
 }

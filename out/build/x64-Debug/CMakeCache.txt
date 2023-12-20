@@ -367,11 +367,38 @@ House_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 House_SOURCE_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/House
 
+//Value Computed by CMake
+Indices_BINARY_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/Assignments/Indices
+
+//Value Computed by CMake
+Indices_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Indices_SOURCE_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/Indices
+
 //OpenGL library for win32
 OPENGL_gl_LIBRARY:STRING=opengl32
 
 //GLU library for win32
 OPENGL_glu_LIBRARY:STRING=glu32
+
+//Value Computed by CMake
+PVM_BINARY_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/Assignments/PVM
+
+//Value Computed by CMake
+PVM_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+PVM_SOURCE_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/PVM
+
+//Value Computed by CMake
+Pyramid_BINARY_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/Assignments/Pyramid
+
+//Value Computed by CMake
+Pyramid_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Pyramid_SOURCE_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/Pyramid
 
 //Build all artifacts
 SPDLOG_BUILD_ALL:BOOL=OFF
@@ -466,6 +493,15 @@ Triangle_SOURCE_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagiellońs
 
 //Use MSVC runtime library DLL
 USE_MSVC_RUNTIME_LIBRARY_DLL:BOOL=ON
+
+//Value Computed by CMake
+Uniforms_BINARY_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/Assignments/Uniforms
+
+//Value Computed by CMake
+Uniforms_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Uniforms_SOURCE_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/src/Assignments/Uniforms
 
 //Value Computed by CMake
 XeEngine_BINARY_DIR:STATIC=C:/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/out/build/x64-Debug/src/XeEngine
@@ -632,7 +668,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
