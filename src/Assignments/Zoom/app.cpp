@@ -15,14 +15,11 @@
 #include "Application/application.h"
 
 #include "camera.h"
-#include "camera_controller.h"
 
 
 void SimpleShapeApplication::init() {
 
     set_camera(new Camera);
-
-    set_controller(new CameraController(camera()));
 
     // A utility function that reads the shader sources, compiles them and creates the program object
     // As everything in OpenGL we reference program by an integer "handle".
@@ -158,6 +155,8 @@ void SimpleShapeApplication::init() {
     glBufferData(GL_UNIFORM_BUFFER, 16 * sizeof(GLfloat), nullptr, GL_DYNAMIC_DRAW);
     glBindBufferBase(GL_UNIFORM_BUFFER, 1, u_pvm_buffer_);
 
+    //glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]); -> moved to 'frame'
+
     glViewport(0, 0, w, h);
     glUseProgram(program);
 }
@@ -186,26 +185,4 @@ void SimpleShapeApplication::scroll_callback(double xoffset, double yoffset) {
     Application::scroll_callback(xoffset, yoffset);
     std::cout << "Scroll offset: " << yoffset << std::endl; // Scroll Movement Logs
     camera()->zoom(yoffset * 0.1f);
-}
-
-void SimpleShapeApplication::mouse_button_callback(int button, int action, int mods) {
-    Application::mouse_button_callback(button, action, mods);
-
-    if (controller_) {
-        double x, y;
-        glfwGetCursorPos(window_, &x, &y);
-
-        if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
-            controller_->LMB_pressed(x, y);
-
-        if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE)
-            controller_->LMB_released(x, y);
-    }
-}
-
-void SimpleShapeApplication::cursor_position_callback(double x, double y) {
-    Application::cursor_position_callback(x, y);
-    if (controller_) {
-        controller_->mouse_moved(x, y);
-    }
 }

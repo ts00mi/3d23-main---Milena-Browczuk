@@ -14,7 +14,7 @@
 #include "glm/gtx/string_cast.hpp"
 #include "glm/gtc/type_ptr.hpp"
 
-#include "ObjectReader/obj_reader.h"
+#include "/Users/mimil/Desktop/PG3D - Uniwersytet Jagielloński/3d23-main/ObjectReader/obj_reader.h"
 #include "XeEngine/ColorMaterial.h"
 #include "XeEngine/PhongMaterial.h"
 #include "XeEngine/Mesh.h"
@@ -40,7 +40,7 @@ namespace xe {
         auto n_indices = 3 * smesh.faces.size();
 
 
-        uint n_floats_per_vertex = 3;
+        glm::uint n_floats_per_vertex = 3;
         for (auto &&t: smesh.has_texcoords) {
             if (t)
                 n_floats_per_vertex += 2;

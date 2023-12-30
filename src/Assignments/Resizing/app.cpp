@@ -12,18 +12,8 @@
 #include "glm/glm.hpp"
 #include "glm/gtc/constants.hpp"
 #include "glm/gtc/matrix_transform.hpp"
-#include "Application/application.h"
-
-#include "camera.h"
-#include "camera_controller.h"
-
 
 void SimpleShapeApplication::init() {
-
-    set_camera(new Camera);
-
-    set_controller(new CameraController(camera()));
-
     // A utility function that reads the shader sources, compiles them and creates the program object
     // As everything in OpenGL we reference program by an integer "handle".
     auto program = xe::utils::create_program(
@@ -89,6 +79,11 @@ void SimpleShapeApplication::init() {
     float strength = 1.0f;
     float color[3] = { 1.0f, 1.0f, 1.0f };
 
+    //"Moving houses" - uniforms movement parameters
+    //    float theta = 1.0 * glm::pi<float>() / 6.0f;
+    //    auto cs = std::cos(theta);
+    //    auto ss = std::sin(theta);
+
     // Generating the buffer and loading the vertex data into it.
     GLuint v_buffer_handle;
     glGenBuffers(1, &v_buffer_handle);
@@ -141,31 +136,37 @@ void SimpleShapeApplication::init() {
     // This setups an OpenGL vieport of the size of the whole rendering window.
     int w, h;
     std::tie(w, h) = frame_buffer_size();
+    aspect_ = (float)w / h;
+    fov_ = glm::pi<float>() / 4.0;
+    near_ = 0.1f;
+    far_ = 100.0f;
 
-    camera()->look_at(glm::vec3(0.0, 0.0, 2.0), glm::vec3(0.0, 0.0, 1.0), glm::vec3(0.0, 1.0, 0.0));
+    P_ = glm::perspective(fov_, aspect_, near_, far_);
 
-    float aspect_ = static_cast<float>(w) / h;
-    float fov_ = glm::pi<float>() / 2.0;
-    float near_ = 0.1f;
-    float far_ = 100.0f;
+    glm::vec3 camera_position = glm::vec3(0.0, 0.0, 2.0); // Camera coordinates in World Space
+    glm::vec3 target_position = glm::vec3(0.0, 0.0, 1.0); // A point on which camera is looking at
+    glm::vec3 up_vector = glm::vec3(0.0, 1.0, 0.0);  // Vector indicating the direction of the top of the camera
 
-    camera()->perspective(fov_, aspect_, near_, far_);
+    V_ = glm::lookAt(camera_position, target_position, up_vector);
 
     //Generating u_pvm_buffer_
-    //GLuint u_pvm_buffer_; -> overwritten variable (already existing in class (app.h))
+    //GLuint u_pvm_buffer_;
     glGenBuffers(1, &u_pvm_buffer_);
     glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
     glBufferData(GL_UNIFORM_BUFFER, 16 * sizeof(GLfloat), nullptr, GL_DYNAMIC_DRAW);
     glBindBufferBase(GL_UNIFORM_BUFFER, 1, u_pvm_buffer_);
 
+    //glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]); -> moved to 'frame'
+
     glViewport(0, 0, w, h);
     glUseProgram(program);
+
 }
 
 //This functions is called every frame and does the actual rendering.
 void SimpleShapeApplication::frame() {
 
-    auto PVM = camera()->projection() * camera()->view();
+    auto PVM = P_ * V_;
     glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
@@ -179,33 +180,7 @@ void SimpleShapeApplication::frame() {
 void SimpleShapeApplication::framebuffer_resize_callback(int w, int h) {
     Application::framebuffer_resize_callback(w, h);
     glViewport(0, 0, w, h);
-    camera_->set_aspect((float)w / h);
+    aspect_ = (float)w / h;
+    P_ = glm::perspective(fov_, aspect_, near_, far_);
 }
 
-void SimpleShapeApplication::scroll_callback(double xoffset, double yoffset) {
-    Application::scroll_callback(xoffset, yoffset);
-    std::cout << "Scroll offset: " << yoffset << std::endl; // Scroll Movement Logs
-    camera()->zoom(yoffset * 0.1f);
-}
-
-void SimpleShapeApplication::mouse_button_callback(int button, int action, int mods) {
-    Application::mouse_button_callback(button, action, mods);
-
-    if (controller_) {
-        double x, y;
-        glfwGetCursorPos(window_, &x, &y);
-
-        if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
-            controller_->LMB_pressed(x, y);
-
-        if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE)
-            controller_->LMB_released(x, y);
-    }
-}
-
-void SimpleShapeApplication::cursor_position_callback(double x, double y) {
-    Application::cursor_position_callback(x, y);
-    if (controller_) {
-        controller_->mouse_moved(x, y);
-    }
-}

@@ -14,7 +14,6 @@
 #include "glm/gtc/matrix_transform.hpp"
 
 #include "camera.h"
-#include "camera_controller.h"
 
 class SimpleShapeApplication : public xe::Application
 {
@@ -38,21 +37,10 @@ public:
 
     void scroll_callback(double xoffset, double yoffset) override;
 
-    void mouse_button_callback(int button, int action, int mods) override;
-
-    void cursor_position_callback(double xoffset, double yoffset) override;
-
-    void set_controller(CameraController* controller) { controller_ = controller; }
-
-    
-
 private:
-
     GLuint vao_;
     GLuint u_pvm_buffer_;
 
     Camera* camera_;
-
-    CameraController* controller_;
 
 };
