@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.15)
-project(House)
+project(MeshesMaterials)
 
 add_compile_definitions(PROJECT_NAME="${PROJECT_NAME}" PROJECT_DIR="${CMAKE_CURRENT_SOURCE_DIR}")
 
 add_executable(${PROJECT_NAME}
-        "../MeshesMaterials/main (2).cpp"
+        main.cpp
         app.h
         app.cpp
          "camera.h" "rotation.h" "camera_controller.h")

@@ -6,7 +6,7 @@ add_compile_definitions(PROJECT_NAME="${PROJECT_NAME}" PROJECT_DIR="${CMAKE_CURR
 add_library(xe-engine
         Camera.h
         Material.h
-        ColorMaterial.cpp ColorMaterial.h
+        "ColorMaterial.cpp" "ColorMaterial.h"
         Scene.cpp Scene.h
         Mesh.cpp Mesh.h
         mesh_loader.cpp mesh_loader.h

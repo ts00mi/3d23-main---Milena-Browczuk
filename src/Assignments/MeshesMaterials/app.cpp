@@ -20,10 +20,6 @@
 #include "Engine/Mesh.h"
 #include "Engine/Material.h"
 
-#define STB_IMAGE_IMPLEMENTATION  1
-
-#include "3rdParty/stb/stb_image.h"
-
 
 void SimpleShapeApplication::init() {
 
@@ -52,20 +48,16 @@ void SimpleShapeApplication::init() {
 
     // A vector containing the x,y,z vertex coordinates *RGB parameters deleted (assigned in submeshes)
     // it also contains  data for pyramid -> simplified
-    // Added u, v (UVs) attributes
     std::vector<GLfloat> vertices = {
 
             // Base
-            -0.5f, 0.5f, 0.0f, 0.1910, 0.5000,
-             0.5f, 0.5f, 0.0f, 0.5000, 0.8090,
-            -0.5f, -0.5f, 0.0f, 0.5000, 0.1910,
-            0.5f, -0.5f, 0.0f, 0.8090, 0.5000,
+            -0.5f, 0.5f, 0.0f,
+             0.5f, 0.5f, 0.0f,
+            -0.5f, -0.5f, 0.0f,
+            0.5f, -0.5f, 0.0f,
 
-            // Peak -> additional peak vertices included for UV mapping (texture parameters differ)
-            0.0f, 0.0f, 1.0f, 0.000, 1.000,
-            0.0f, 0.0f, 1.0f, 1.000, 1.000,
-            0.0f, 0.0f, 1.0f, 1.000, 0.000,
-            0.0f, 0.0f, 1.0f, 0.000, 0.000,
+            // Peak
+            0.0f, 0.0f, 1.0f,
     };
 
     std::vector<GLushort> indices =
@@ -78,42 +70,19 @@ void SimpleShapeApplication::init() {
             0, 4, 1,
 
             // 2nd face
-            1, 5, 3,
+            1, 4, 3,
 
             // 3rd face
-            3, 6, 2,
+            3, 4, 2,
 
             // 4th face
-            2, 7, 0,
+            2, 4, 0,
     };
-
-    stbi_set_flip_vertically_on_load(true);
-    GLint width, height, channels;
-    auto texture_file = std::string(ROOT_DIR) + "/Models/multicolor.png";
-    auto img = stbi_load(texture_file.c_str(), &width, &height, &channels, 0);
-
-    if (!img) {
-        std::cerr << "Could not read image from file `{}'" << std::endl;
-    }
-
-    std::cerr << width << std::endl;
-    std::cerr << height << std::endl;
-    std::cerr << channels << std::endl;
-
-    // Texture | Buffer
-    GLuint create_texture;
-    glGenTextures(1, &create_texture);
-    glBindTexture(GL_TEXTURE_2D, create_texture);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, img);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glBindTexture(GL_TEXTURE_2D, 0u);
 
     // Vertex initialization | Mesh 
     pyramid->allocate_vertex_buffer(vertices.size() * sizeof(GLfloat), GL_STATIC_DRAW); // Allocate memory for vertex buffer
     pyramid->load_vertices(0, vertices.size() * sizeof(GLfloat), vertices.data()); // Load appriopriate data | Vertcies
-    pyramid->vertex_attrib_pointer(0, 3, GL_FLOAT, 5 * sizeof(GLfloat), 0);  // Position | Attribute
-    pyramid->vertex_attrib_pointer(1, 2, GL_FLOAT, 5 * sizeof(GLfloat), 3 * sizeof(GLfloat));  // Texture | Attribute
+    pyramid->vertex_attrib_pointer(0, 3, GL_FLOAT, 3 * sizeof(GLfloat), 0);  // Position | Attribute
 
     // Indices initialization | Mesh
     pyramid->allocate_index_buffer(indices.size() * sizeof(GLushort), GL_STATIC_DRAW); // Allocate memory for indices buffer
@@ -123,17 +92,40 @@ void SimpleShapeApplication::init() {
     // Splitting the previous index buffer into submeshes for each pyramid face as individual
     // Assigning a material to a submesh
 
-    auto material = new xe::ColorMaterial(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f));
-    material->set_texture(create_texture);
+    // Base
+    pyramid->add_submesh(0, 6, new xe::ColorMaterial(glm::vec4(0.0f, 1.0f, 0.0f, 1.0f)));
 
-    // Submesh
-    pyramid->add_submesh(0, 18, material);
+    // 1st face
+    pyramid->add_submesh(6, 9, new xe::ColorMaterial(glm::vec4(1.0f, 1.0f, 0.0f, 1.0f)));
+
+    //2nd face
+    pyramid->add_submesh(9, 12, new xe::ColorMaterial(glm::vec4(0.0f, 1.0f, 1.0f, 1.0f)));
+
+    // 3rd face
+    pyramid->add_submesh(12, 15, new xe::ColorMaterial(glm::vec4(0.0f, 0.0f, 1.0f, 1.0f)));
+
+    // 4th face
+    pyramid->add_submesh(15, 18, new xe::ColorMaterial(glm::vec4(1.0f, 0.0f, 1.0f, 1.0f)));
 
     meshes_.push_back(pyramid); //Add pyramid to meshes_ vector
 
     //Uniforms floats
     float strength = 1.0f;
     float color[3] = { 1.0f, 1.0f, 1.0f };
+
+    // Generating the buffer and loading the vertex data into it.
+    GLuint v_buffer_handle;
+    glGenBuffers(1, &v_buffer_handle);
+    OGL_CALL(glBindBuffer(GL_ARRAY_BUFFER, v_buffer_handle));
+    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(GLfloat), vertices.data(), GL_STATIC_DRAW);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+    //Generating indices buffer
+    GLuint i_buffer_handle;
+    glGenBuffers(1, &i_buffer_handle);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, i_buffer_handle);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLushort), indices.data(), GL_STATIC_DRAW);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
     //Generating uniforms buffer | colors + PVM
     GLuint u_buffer_handle;
@@ -149,7 +141,20 @@ void SimpleShapeApplication::init() {
     // the state of all vertex buffers needed for rendering
     glGenVertexArrays(1, &vao_);
     glBindVertexArray(vao_);
-   
+    glBindBuffer(GL_ARRAY_BUFFER, v_buffer_handle);
+    //indices
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, i_buffer_handle);
+
+    // This indicates that the data for attribute 0 should be read from a vertex buffer.
+    glEnableVertexAttribArray(0);
+    // and this specifies how the data is layout in the buffer.
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<GLvoid*>(0));
+
+    //Kolorki, dla location=1 + offset
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<GLvoid*>(3 * sizeof(GLfloat)));
+
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
     //end of vao "recording"
 

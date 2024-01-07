@@ -44,8 +44,6 @@ public:
 
     void set_controller(CameraController* controller) { controller_ = controller; }
 
-    
-
 private:
 
     GLuint vao_;

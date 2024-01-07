@@ -2,7 +2,7 @@
 // Created by Piotr Białas on 20/11/2021.
 //
 
-#include "ColorMaterial.h"
+#include "XeEngine/ColorMaterial.h"
 
 #include "Application/utils.h"
 

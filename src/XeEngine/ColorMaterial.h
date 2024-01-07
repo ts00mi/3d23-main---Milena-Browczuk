@@ -17,7 +17,7 @@ namespace xe {
         static GLuint program() { return shader_; }
 
         ColorMaterial(const glm::vec4 color, GLuint texture, GLuint texture_unit) : Kd_(color), texture_(texture),
-                                                                                    texture_unit_(texture_unit) {}
+            texture_unit_(texture_unit) {}
 
         ColorMaterial(const glm::vec4 color, GLuint texture) : ColorMaterial(color, texture, 0) {}
 
@@ -42,10 +42,6 @@ namespace xe {
     };
 
 
-    GLuint create_texture(const std::string &name);
+    GLuint create_texture(const std::string& name);
 
 }
-
-
-
-
